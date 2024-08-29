@@ -13,12 +13,12 @@
 <body>
 	<!-- Star Quiz Button -->
 
-	<div class="start_btn">
+	<div class="start_btn global">
 		<button>Start Quiz</button>
 	</div>
 
 	<!-- Info Button -->
-	<div class="info_container">
+	<div class="info_container global">
 		<div class="info_title">
 			<span>
 				Some Rules of this Quiz
@@ -42,13 +42,13 @@
 			</div>
 		</div>
 		<div class="buttons">
-			<button class="quit">Exit Quiz</button>
-			<button class="restart">Continue</button>
+			<button class="check quit">Exit Quiz</button>
+			<button class="check restart">Continue</button>
 		</div>
 	</div>
 
 	<!-- Quiz Box -->
-	<div class="quiz_box">
+	<div class="quiz_box global">
 		<header>
 			<div class="title">
 				Web3bridge P2 | Quiz Application
@@ -88,8 +88,9 @@
 		<footer>
 			<div class="total_que">
 				<span>
-					<p>2</p> of
-					<p>3</p>
+					<p class="currentNo">2</p>
+					of
+					<p class="totalNo">5</p>
 					Questions
 				</span>
 			</div>
@@ -98,7 +99,7 @@
 	</div>
 
 	<!-- Result Box -->
-	<div class="result_box">
+	<div class="result_box global">
 		<div class="icon">
 			<i class="fas fa-crown"></i>
 		</div>
@@ -106,14 +107,19 @@
 			You've completed the Quiz!
 		</div>
 		<div class="score_text">
-			<span>Your Score is <p>0</p> out of <p>30</p></span>
+			<span>and sorry, you got only
+				<p class="score">2</p>
+				out of
+				<p class="totalQuestion">5</p>
+			</span>
 		</div>
 		<div class="buttons">
-			<button class="restart">Replay Quiz</button>
-			<button class="quit">Quit Quiz</button>
+			<button class="check restart">Replay Quiz</button>
+			<button class="check quit">Quit Quiz</button>
 		</div>
 	</div>
 
+	<script src="./main.js" type="module"></script>
 </body>
 
 </html>
